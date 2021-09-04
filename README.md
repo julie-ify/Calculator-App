@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/calc-img.png)
+![screenshot](./dist/images/calc-img.png)
 
 
 ### Links
