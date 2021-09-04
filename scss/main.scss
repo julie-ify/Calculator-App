@@ -121,6 +121,7 @@ input[type='text']:focus {
   background-color: $Light-grayish-cyan;
   color: $Very-dark-cyan;
   width: 100%;
+  cursor: text;
 }
 
 .body {

@@ -96,7 +96,8 @@ input[type='text']:focus {
 .light {
   background-color: #f4fafa;
   color: #00494d;
-  width: 100%; }
+  width: 100%;
+  cursor: text; }
 
 .body {
   background-color: #00494d;
