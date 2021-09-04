@@ -29,7 +29,7 @@
           <div class="head">
             <h4 class="sm-heading">Bill</h4>
             <div class="bill-amount">
-              <input type="text" placeholder="0" />
+              <input type="text" id="bill" placeholder="0"/>
               <span class="dollar">$</span>
             </div>
             <h4 class="sm-heading">Select Tip %</h4>
@@ -39,11 +39,11 @@
               <button type="button" class="tip greener">15%</button>
               <button type="button" class="tip">25%</button>
               <button type="button" class="tip">50%</button>
-              <button type="button" class="tip light">Custom</button>
+              <input type="text" class="tip light" contenteditable="true" placeholder="custom"></input>
             </div>
             <h4 class="sm-heading">Number of People</h4>
             <div class="bill-amount">
-              <input type="text" placeholder="0" />
+              <input type="text" placeholder="0" id="people"/>
               <span class="face dollar"><i class="fas fa-user-alt"></i></span>
             </div>
           </div>
@@ -54,14 +54,14 @@
                   <h4 class="no-mg">Tip Amount</h4>
                   <span class="little-text">/ Person</span>
                 </div>
-                <div class="tip-amount">$4.27</div>
+                <div class="tip-amount each"></div>
               </div>
               <div class="first-result">
                 <div class="body-head">
                   <h4 class="no-mb">Total</h4>
                   <span class="little-text">/ Person</span>
                 </div>
-                <div class="tip-amount">$32.79</div>
+                <div class="tip-amount total"></div>
               </div>
             </div>
             <div class="button">
@@ -78,5 +78,7 @@
       >. Coded by
       <a href="https://github.com/julie-ify" target="_blank">Juliana Ifionu</a>.
     </footer>
+
+  <script src="./app.js"></script>
   </body>
 </html>

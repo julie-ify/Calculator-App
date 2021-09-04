@@ -62,7 +62,7 @@ body {
   position: relative;
 }
 
-input[type='text'] {
+#bill, #people {
   height: 50px;
   width: 100%;
   display: flex;
@@ -120,6 +120,7 @@ input[type='text']:focus {
 .light {
   background-color: $Light-grayish-cyan;
   color: $Very-dark-cyan;
+  width: 100%;
 }
 
 .body {
