@@ -1,5 +1,222 @@
-$primary-color: #444;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+$primary-color: hsl(172, 67%, 45%);
+$Very-dark-cyan: hsl(183, 100%, 15%);
+$Dark-grayish-cyan: hsl(186, 14%, 43%);
+$Dark2-grayish-cyan: hsl(184, 14%, 56%);
+$Light-grayishcyan: hsl(185, 41%, 84%);
+$Light-grayish-cyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  background-color: $Light-grayishcyan;
+  color: $Very-dark-cyan;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.head-content {
+  text-align: center;
+}
+
+.bg-heading {
+  font-weight: 500;
+  padding: 3rem;
+  letter-spacing: 10px;
+  color: $Very-dark-cyan;
+  line-height: 1.3;
+}
+
+.header {
+  width: 100%;
+  background-color: $White;
+  border-radius: 40px 40px 0 0;
+  padding: 2rem;
+}
+
+.calculator {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.sm-heading {
+  margin: 1rem 0;
+  font-size: 15px;
+}
+
+.bill-amount {
+  width: 100%;
+  position: relative;
+}
+
+input[type='text'] {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  text-align: right;
+  padding: 10px;
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+  color: $Very-dark-cyan;
+  background-color: $Light-grayish-cyan;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+input[type='text']:focus {
+  border: none;
+  outline: none;
+}
+
+.dollar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: $Dark2-grayish-cyan;
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.tip {
+  font-family: 'Space Mono', monospace;
+  outline: none;
+  border: none;
+  background-color: $Very-dark-cyan;
+  color: $White;
+  border-radius: 5px;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.greener {
   background-color: $primary-color;
+  color: $Very-dark-cyan;
+}
+
+.light {
+  background-color: $Light-grayish-cyan;
+  color: $Very-dark-cyan;
+}
+
+.body {
+  background-color: $Very-dark-cyan;
+  padding: 1rem;
+  border-radius: 15px;
+  color: $White;
+}
+
+.first-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.body-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.little-text {
+  font-size: 13px;
+  color: $Dark2-grayish-cyan;
+}
+
+.tip-amount {
+  color: $primary-color;
+  font-weight: 700;
+}
+
+
+button[type='reset'] {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: $primary-color;
+  color: $Very-dark-cyan;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.attribution {
+  background-color: $Very-dark-cyan;
+  color: $White;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.attribution a {
+  color: $White;
+}
+
+@media (min-width: 576px) {
+  .header {
+    max-width: 800px;
+    margin: auto;
+    border-radius: 40px;
+  }
+
+  .bg-heading {
+    padding: 2rem;
+    font-size: 20px;
+  }
+
+  .calculator {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .head {
+    width: 50%;
+  }
+
+  .body {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .tips {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .first-result {
+    margin-top: 2rem;
+  }
 }

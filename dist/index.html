@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator App</title>
-</head>
-<body>
-  <main>
-    <div class="head-content">
-      <h1 class="bg-heading">SPLI<br>TTER</h1>
-    </div>
-    <section class="header">
-      <div class="calculator">
-        <div class="head">
-          <h4 class="sm-heading">Bill</h4>
-          
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="head-content">
+        <h1 class="bg-heading">SPLI<br />TTER</h1>
       </div>
-    </section>
-  </main>
-</body>
+      <section class="header">
+        <div class="calculator">
+          <div class="head">
+            <h4 class="sm-heading">Bill</h4>
+            <div class="bill-amount">
+              <input type="text" placeholder="0" />
+              <span class="dollar">$</span>
+            </div>
+            <h4 class="sm-heading">Select Tip %</h4>
+            <div class="tips">
+              <button type="button" class="tip">5%</button>
+              <button type="button" class="tip">10%</button>
+              <button type="button" class="tip greener">15%</button>
+              <button type="button" class="tip">25%</button>
+              <button type="button" class="tip">50%</button>
+              <button type="button" class="tip light">Custom</button>
+            </div>
+            <h4 class="sm-heading">Number of People</h4>
+            <div class="bill-amount">
+              <input type="text" placeholder="0" />
+              <span class="face dollar"><i class="fas fa-user-alt"></i></span>
+            </div>
+          </div>
+          <div class="body">
+            <div>
+              <div class="first-result">
+                <div class="body-head">
+                  <h4 class="no-mg">Tip Amount</h4>
+                  <span class="little-text">/ Person</span>
+                </div>
+                <div class="tip-amount">$4.27</div>
+              </div>
+              <div class="first-result">
+                <div class="body-head">
+                  <h4 class="no-mb">Total</h4>
+                  <span class="little-text">/ Person</span>
+                </div>
+                <div class="tip-amount">$32.79</div>
+              </div>
+            </div>
+            <div class="button">
+              <button type="reset">reset</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/julie-ify" target="_blank">Juliana Ifionu</a>.
+    </footer>
+  </body>
 </html>
