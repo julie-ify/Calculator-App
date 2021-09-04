@@ -69,5 +69,5 @@ I will be implementing the Reset button to reset the tip amount and total amount
 ## Acknowledgments
 
 I want to use this opportunity to thank Frontend Mentor for providing the design for this app.
-I want to also acknowledge ![Microverse](https://github.com/microverseinc) where I'm currently learning to become a software developer.
+I want to also acknowledge [Microverse](https://github.com/microverseinc) where I'm currently learning to become a software developer.
 
