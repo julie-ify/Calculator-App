@@ -2,6 +2,10 @@ const bill = document.querySelector('#bill');
 const people = document.querySelector('#people');
 const each = document.querySelector('.each');
 const total = document.querySelector('.total');
+const resetBtn = document.querySelector('.resetBtn')
+
+each.textContent = `$0`;
+total.textContent = `$0`;
 const tipPercentage = [...document.querySelectorAll('.tip')];
 tipPercentage.forEach((tip) => {
   tip.addEventListener('click', (e) => {
@@ -100,3 +104,8 @@ tipPercentage.forEach((tip) => {
     }
   });
 });
+
+resetBtn.addEventListener('click', () => {
+  total.textContent = `$0`;
+  each.textContent = `$0`;
+})
